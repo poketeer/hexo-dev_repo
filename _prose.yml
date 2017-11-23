@@ -1,6 +1,6 @@
 prose:
 	metadata:
-      source:
+	source:
         - name: "title"
           field:
             element: "text"
