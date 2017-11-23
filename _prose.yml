@@ -1,9 +1,19 @@
 prose:
-    rooturl: 'source'
-    metadata:
-       _posts:
-	    - name: "title"
-	      field:
-		element: "text"
-		label: "title"
-		value: "testttt"
+  rooturl: 'source'
+  metadata:
+    /:
+      - name: "dir"
+        field:
+          element: "text"
+          label: "Dir"
+          value: ""
+          placeholder: "Root"
+          type: "text"
+    _posts:
+      - name: "dir"
+        field:
+          element: "text"
+          label: "Dir"
+          value: ""
+          placeholder: "Posts"
+          type: "text"
