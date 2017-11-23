@@ -6,7 +6,8 @@ tags:
 categories:
   - hexo
   - 설치
-date: 2016-08-20 07:48:59
+date: {}
+published: true
 ---
 
 <!--![](images/debug.gif)-->
@@ -38,7 +39,7 @@ $ hexo server
 ```
 
 브라우저를 통해 [localhost:4000](http://localhost:4000)에 들어가면 다음과 같은 화면을 볼 수 있다.</br>
-![hexo 초기 화면](http://d.pr/i/18Xgq+)
+![hexo 초기 화면](http://d.pr/i/18Xgq.png)
 
 
 ## Github를 통해 Hexo 호스팅하기
