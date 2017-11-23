@@ -1,0 +1,895 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="hexo,blog," />
+
+
+
+
+
+  <link rel="alternate" href="/feed.xml" title="개발 창고" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="Hexo는 Node.js 기반의 static site 생성기이다. Hexo를 설치하고 Github에 호스팅하는 방법을 알아보려고 한다. 블로그 작성을 시작해야 겠다고 마음 먹은 후로 wordpress, tistory같은 php 기반툴들과 jekyll, hexo와 같은 static site 생성들 중에 어떤 것을 사용할 지 고민을 했었다. 그러다 나의 Ge">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[Hexo로 포스팅하기 1] Hexo를 설치해 보자">
+<meta property="og:url" content="https://pocketeer.github.io/2016/08/20/hexo-install/index.html">
+<meta property="og:site_name" content="개발 창고">
+<meta property="og:description" content="Hexo는 Node.js 기반의 static site 생성기이다. Hexo를 설치하고 Github에 호스팅하는 방법을 알아보려고 한다. 블로그 작성을 시작해야 겠다고 마음 먹은 후로 wordpress, tistory같은 php 기반툴들과 jekyll, hexo와 같은 static site 생성들 중에 어떤 것을 사용할 지 고민을 했었다. 그러다 나의 Ge">
+<meta property="og:image" content="http://d.pr/i/18Xgq+">
+<meta property="og:image" content="http://d.pr/i/1cvRa+">
+<meta property="og:image" content="http://d.pr/i/LmsY+">
+<meta property="og:image" content="http://d.pr/i/12qZK+">
+<meta property="og:updated_time" content="2017-09-21T17:40:08.467Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="[Hexo로 포스팅하기 1] Hexo를 설치해 보자">
+<meta name="twitter:description" content="Hexo는 Node.js 기반의 static site 생성기이다. Hexo를 설치하고 Github에 호스팅하는 방법을 알아보려고 한다. 블로그 작성을 시작해야 겠다고 마음 먹은 후로 wordpress, tistory같은 php 기반툴들과 jekyll, hexo와 같은 static site 생성들 중에 어떤 것을 사용할 지 고민을 했었다. 그러다 나의 Ge">
+<meta name="twitter:image" content="http://d.pr/i/18Xgq+">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"hide"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '작성자'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://pocketeer.github.io/2016/08/20/hexo-install/"/>
+
+
+
+
+
+  <title> [Hexo로 포스팅하기 1] Hexo를 설치해 보자 | 개발 창고 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="ko">
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-90015742-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">개발 창고</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+    
+      <p class="site-subtitle"></p>
+    
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            홈
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            카테고리
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            아카이브
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            태그
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            검색
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="https://pocketeer.github.io/2016/08/20/hexo-install/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Jaehyun Kim">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="개발 창고">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="개발 창고" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                [Hexo로 포스팅하기 1] Hexo를 설치해 보자
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">작성일</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-08-20T07:48:59+09:00">
+                2016-08-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo/설치/" itemprop="url" rel="index">
+                    <span itemprop="name">설치</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/08/20/hexo-install/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/08/20/hexo-install/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <!--![](images/debug.gif)-->
+<p><a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>는 Node.js 기반의 static site 생성기이다. Hexo를 설치하고 Github에 호스팅하는 방법을 알아보려고 한다. 블로그 작성을 시작해야 겠다고 마음 먹은 후로 wordpress, tistory같은 php 기반툴들과 jekyll, hexo와 같은 static site 생성들 중에 어떤 것을 사용할 지 고민을 했었다. 그러다 나의 Geek스러움이 특이한 것에 이끌리게 했고, 개발자들이 블로그에 많이 사용하는 static site를 사용하기로 했다. 그 뒤에 jekyll을 사용하려고 했었지만, 테마를 찾다보니 Hexo의 icarus라는 테마가 마음에 들어 Hexo로 블로깅을 하기로 했다.</p>
+<a id="more"></a>
+<h2 id="Hexo-설치"><a href="#Hexo-설치" class="headerlink" title="Hexo 설치"></a>Hexo 설치</h2><p>Hexo를 설치하기 위해서는 Node.js가 필요하며, github 호스팅을 위해 git을 설치해야 한다. git 설치 및 사용을 위해서는 다음 사이트들을 참고하면 된다.</p>
+<ul>
+<li><a href="https://git-scm.com/" target="_blank" rel="external">Git 홈페이지</a></li>
+<li><a href="https://rogerdudler.github.io/git-guide/index.ko.html" target="_blank" rel="external">Git 간편 안내서</a></li>
+</ul>
+<p><a href="https://nodejs.org/ko/" target="_blank" rel="external">Nodejs 공식 홈페이지</a>에서 다운받을 수도 있지만, 버전 관리를 위해 <a href="https://github.com/creationix/nvm" target="_blank" rel="external">nvm</a>을 통한 설치를 추천한다.<br><br>cURL을 이용하여 nvm 및 Node.js 설치<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ curl https://raw.github.com/creationix/nvm/master/install.sh | sh</div><div class="line">$ nvm install stable</div></pre></td></tr></table></figure></p>
+<p>Node.js를 설치한 뒤 다음 명령어를 통해 hexo를 설치한다. -g 옵션은 터미널에서 hexo 명령어를 사용할 수 있게 해주므로 사용하는 것을 추천한다.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli</div></pre></td></tr></table></figure></p>
+<p>참고로 맥에서는 Xcode 설치 후 Command Line Tools를 설치한 후 사용해야 한다.</p>
+<p>폴더를 생성한 후, 해당 폴더에서 다음 명령어를 입력하면 초기화 및 확인이 가능하다.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo init</div><div class="line">$ hexo server</div></pre></td></tr></table></figure></p>
+<p>브라우저를 통해 <a href="http://localhost:4000" target="_blank" rel="external">localhost:4000</a>에 들어가면 다음과 같은 화면을 볼 수 있다.<br><br><img src="http://d.pr/i/18Xgq+" alt="hexo 초기 화면"></p>
+<h2 id="Github를-통해-Hexo-호스팅하기"><a href="#Github를-통해-Hexo-호스팅하기" class="headerlink" title="Github를 통해 Hexo 호스팅하기"></a>Github를 통해 Hexo 호스팅하기</h2><p>우선 Github에 로그인 한 뒤 새 repository를 생성한다.<br><br><img src="http://d.pr/i/1cvRa+" alt="새 repository 생성 1"><br>그 후 repository 이름을 입력해야 하는데 (자신의 github 아이디).github.io와 같은 형식으로 해야 한다. 예를 들어, 나의 아이디는 pocketeer이므로 pocketeer.github.io를 입력해 주면 된다. <br><br><img src="http://d.pr/i/LmsY+" alt="새 repository 생성 2"><br>repository 주소를 복사한다.<br><br><img src="http://d.pr/i/12qZK+" alt="repository 주소 복사"></p>
+<p>이제 _config.yml에서 deploy에 아까 복사한 repository 주소를 넣으면 된다.<br>참고로 자세한 설명은 생략하겠지만 bitbucket의 repository 주소를 넣어도 가능하다.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Deployment</span></div><div class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></div><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>: git</div><div class="line">  repo: [복사한 repository 주소]</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
+<p>꼭 할 필요는 없지만, 플러그인 연동시 문제가 될 수 있으므로 다음처럼 url도 바꿔주는 것이 좋다.<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># URL</span></div><div class="line"><span class="comment">## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'</span></div><div class="line"><span class="attr">url:</span> <span class="attr">http://(자신의</span> <span class="string">github</span> <span class="string">아이디).github.io</span></div></pre></td></tr></table></figure></p>
+<p>github에서 자동으로 hexo 템플릿에 따라 사이트를 생성해 주지는 않기 때문에, github repository에 deploy하기 전에 다음 명령어를 입력하여 사이트를 생성해 주어야 한다. 생성된 사이트는 public 폴더에 있다.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure></p>
+<p>그 후에 다음 명령어를 입력하면, _config.yml에 넣었던 repository에 public 폴더안의 파일들을 deploy해준다.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure></p>
+<p>보통 사이트를 업데이트하기 위해서는 앞의 두 명령어를 차례로 입력해야 하는데, 좀 귀찮다. 이를 위해 다음 두 명령어처럼 한번에 가능하다. 두 개다 사이트를 생성 후 deploy해준다.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy -g    <span class="comment"># g는 generate의 g</span></div><div class="line">$ hexo generate <span class="_">-d</span>  <span class="comment"># d는 deploy의 d</span></div></pre></td></tr></table></figure></p>
+<p>이제 확인을 위해 브라우저를 통해 <a href="http://(자신의" target="_blank" rel="external">http://(자신의</a> github 아이디).github.io에 들어가면 자신의 블로그를 확인할 수 있다.</p>
+<h2 id="끝으로"><a href="#끝으로" class="headerlink" title="끝으로"></a>끝으로</h2><p>지금까지 Github를 통해 Hexo를 호스팅하는 방법에 대해 알아보았다. Hexo에 대해 계속해서 포스팅할 예정이지만, 정보를 더 얻고 싶으면 <a href="https://hexo.io/docs/" target="_blank" rel="external">Hexo의 문서</a>를 보는 것도 추천한다. 다음 글에서는 Hexo로 글쓰는 방법에 대해 알아본다.</p>
+<h2 id="참고링크"><a href="#참고링크" class="headerlink" title="참고링크"></a>참고링크</h2><ul>
+<li><a href="https://hexo.io/" target="_blank" rel="external">Hexo</a></li>
+<li><a href="https://hexo.io/docs/" target="_blank" rel="external">Hexo documentation</a></li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+            <a href="/tags/blog/" rel="tag"># blog</a>
+          
+        </div>
+      
+
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            목차
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            흝어보기
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Jaehyun Kim" />
+          <p class="site-author-name" itemprop="name">Jaehyun Kim</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">포스트</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">카테고리</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">태그</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/feed.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-설치"><span class="nav-number">1.</span> <span class="nav-text">Hexo 설치</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Github를-통해-Hexo-호스팅하기"><span class="nav-number">2.</span> <span class="nav-text">Github를 통해 Hexo 호스팅하기</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#끝으로"><span class="nav-number">3.</span> <span class="nav-text">끝으로</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#참고링크"><span class="nav-number">4.</span> <span class="nav-text">참고링크</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2016 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jaehyun Kim</span>
+</div>
+
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'dev-repo';
+      var disqus_identifier = '2016/08/20/hexo-install/';
+
+      var disqus_title = "[Hexo로 포스팅하기 1] Hexo를 설치해 보자";
+
+
+      function run_disqus_script(disqus_script) {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+
+      
+        var disqus_config = function () {
+            this.page.url = disqus_url;
+            this.page.identifier = disqus_identifier;
+            this.page.title = disqus_title;
+        };
+        run_disqus_script('embed.js');
+      
+
+    </script>
+  
+
+
+
+
+
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "db.xml";
+    if (search_path.length == 0) {
+      search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+      $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = $( "entry", xmlResponse ).map(function() {
+            return {
+              title: $( "title", this ).text(),
+              content: $("content",this).text(),
+              url: $( "url" , this).text()
+            };
+          }).get();
+          var $input = document.getElementById(search_id);
+          var $resultContent = document.getElementById(content_id);
+          $input.addEventListener('input', function(){
+            var matchcounts = 0;
+            var str='<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length > 1) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var content_index = [];
+                var data_title = data.title.trim().toLowerCase();
+                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                var data_url = decodeURIComponent(data.url);
+                var index_title = -1;
+                var index_content = -1;
+                var first_occur = -1;
+                // only match artiles with not empty titles and contents
+                if(data_title != '') {
+                  keywords.forEach(function(keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+                    if( index_title >= 0 || index_content >= 0 ){
+                      isMatch = true;
+                      if (i == 0) {
+                        first_occur = index_content;
+                      }
+                    }
+
+                  });
+                }
+                // show search results
+                if (isMatch) {
+                  matchcounts += 1;
+                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                  var content = data.content.trim().replace(/<[^>]+>/g,"");
+                  if (first_occur >= 0) {
+                    // cut out 100 characters
+                    var start = first_occur - 20;
+                    var end = first_occur + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if(start == 0){
+                      end = 50;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    var match_content = content.substring(start, end);
+                    // highlight all keywords
+                    keywords.forEach(function(keyword){
+                      var regS = new RegExp(keyword, "gi");
+                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                    });
+
+                    str += "<p class=\"search-result\">" + match_content +"...</p>"
+                  }
+                  str += "</li>";
+                }
+              })};
+            str += "</ul>";
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+            $resultContent.innerHTML = str;
+          });
+          proceedsearch();
+        }
+      });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
