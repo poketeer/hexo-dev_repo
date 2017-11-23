@@ -1,6 +1,6 @@
 prose:
 	metadata:
-      _posts:
+      source:
         - name: "title"
           field:
             element: "text"
