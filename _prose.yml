@@ -1,8 +1,9 @@
 prose:
-	roo_turl: 'source'
-	metadata:
-      _post:
-          - name: "title"
-            field:
-              element: "text"
-              label: "title"
+    rooturl: 'source'
+    metadata:
+       _posts:
+	    - name: "title"
+	      field:
+		element: "text"
+		label: "title"
+		value: "testttt"
