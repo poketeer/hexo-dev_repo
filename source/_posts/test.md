@@ -1,10 +1,10 @@
 metadata:
 	tags:
-  - hexo
-  - blog
-categories:
-  - hexo
-  - 설치
+      - hexo
+      - blog
+    categories:
+      - hexo
+      - 설치
 date: 2016-08-20T07:48:59.000Z
 ## A New Post
 
