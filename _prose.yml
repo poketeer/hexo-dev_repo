@@ -1,19 +1,25 @@
 prose:
-  rooturl: 'source'
+  rooturl: '_posts'
+  siteurl: 'https://dev-repo.ga/'
+  media: 'media'
+  ignore:
+    - index.md
+    - _config.yml
+    - /_layouts
+    - /_includes
   metadata:
-    /:
-      - name: "dir"
-        field:
-          element: "text"
-          label: "Dir"
-          value: ""
-          placeholder: "Root"
-          type: "text"
     _posts:
-      - name: "dir"
+      - name: "layout"
         field:
-          element: "text"
-          label: "Dir"
-          value: ""
-          placeholder: "Posts"
-          type: "text"
+          element: "hidden"
+          value: "blog"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: "Apples"
+              value: "apples"
+            - name: "Bananas"
+              value: "bananas"
