@@ -1,5 +1,5 @@
 prose:
-  rooturl: '_posts'
+  rooturl: 'source/_posts'
   siteurl: 'https://dev-repo.ga/'
   media: 'media'
   ignore:
@@ -18,6 +18,12 @@ prose:
         field:
           element: "hidden"
           value: "blog"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Tags"
+          placeholder: "Tag"
+          alterable: "true"
       - name: "published"
         field:
           element: "multiselect"
