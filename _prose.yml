@@ -9,17 +9,26 @@ prose:
     - /_includes
   metadata:
     _posts:
+      - name: "title"
+        field:
+          element: "text"
+          placeholder: "Title"
+          value: ""
       - name: "layout"
         field:
           element: "hidden"
           value: "blog"
-      - name: "tags"
+      - name: "published"
         field:
           element: "multiselect"
-          label: "Add Tags"
-          placeholder: "Choose Tags"
+          label: "Publish?"
+          placeholder: "Publish?"
           options:
-            - name: "Apples"
-              value: "apples"
-            - name: "Bananas"
-              value: "bananas"
+            - name: "Publish"
+              value: "true"
+            - name: "Draft"
+              value: "false"
+      - name: "date"
+        field:
+          element: "hidden"
+          value: "{}"
