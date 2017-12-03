@@ -6,9 +6,9 @@ tags:
   - blog
 categories:
   - hexo
-thumbnail: 'https://cl.ly/102W1F2T0y3J'
+thumbnail: 'https://cl.ly/102W1F2T0y3J/Image%202017-12-04%20at%203.33.04%20AM.png'
 published: true
-banner: 'https://cl.ly/102W1F2T0y3J'
+banner: 'https://cl.ly/102W1F2T0y3J/Image%202017-12-04%20at%203.33.04%20AM.png'
 ---
 
 <!--![](images/debug.gif)-->
