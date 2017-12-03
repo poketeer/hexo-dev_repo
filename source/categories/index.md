@@ -1,3 +1,3 @@
-title: "All categories"
-type: "categories"
+title: "Categories"
+layout: "categories"
 ---
