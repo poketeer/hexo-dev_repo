@@ -1,13 +1,13 @@
 ---
 date: '2017-12-03 22:39 +0900'
-published: true
 title: 블루투스 테스트 중입니다.
 tags:
-  - test
+  - error
   - bluetooth
   - mac
 categories:
-  - test
+  - mac
+  - 에러
 ---
 ## 테스트중
 ```java

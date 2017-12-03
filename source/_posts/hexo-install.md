@@ -7,7 +7,6 @@ categories:
   - hexo
   - 설치
 date: 2017-10-30 10:30
-published: true
 ---
 
 <!--![](images/debug.gif)-->

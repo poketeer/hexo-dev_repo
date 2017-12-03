@@ -17,7 +17,7 @@ customize:
         enabled: true # Whether to show profile bar
         avatar: css/images/avatar.png
         gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-        author: PPOffice
+        author: poketeer
         author_title: 개발자
         location: Korea
         follow: https://github.com/ppoffice/
@@ -26,11 +26,11 @@ customize:
     thumbnail: true # enable posts thumbnail, options: true, false
     favicon: # path to favicon
     social_links:
-        github: http://github.com/ppoffice/hexo-theme-icarus
-        twitter: /
-        facebook: /
-        dribbble: /
-        rss: https://pocketeer.github.io/feed.xml
+        # github: https://github.com/poketeer/hexo-dev_repo
+        # twitter: /
+        # facebook: /
+        # dribbble: /
+        rss: https://dev-repo.ga/feed.xml
     social_link_tooltip: true # enable the social link tooltip, options: true, false
 
 # Widgets
