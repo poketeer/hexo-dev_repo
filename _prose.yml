@@ -14,17 +14,6 @@ prose:
           element: "text"
           placeholder: "Title"
           value: ""
-      # - name: "published"
-        # field:
-        #   element: "select"
-        #   label: "Publish?"
-        #   placeholder: "Publish?"
-        #   value: "false"
-        #   options:
-        #     - name: "Publish"
-        #       value: "true"
-        #     - name: "Draft"
-        #       value: "false"
       - name: "tags"
         field:
           element: "multiselect"

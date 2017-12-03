@@ -1,3 +1,4 @@
+---
 title: (Hexo로 포스팅하기 2) Hexo로 글쓰기
 tags:
   - hexo
