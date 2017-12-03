@@ -1,7 +1,7 @@
 ---
 date: '{}'
 published: true
-title: mac-bluetooth.md
+title: 맥 블루투스 어떻게 하냐
 tags:
   - test
   - blog
