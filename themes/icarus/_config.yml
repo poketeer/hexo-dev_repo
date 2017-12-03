@@ -17,10 +17,10 @@ customize:
         enabled: true # Whether to show profile bar
         avatar: css/images/avatar.png
         gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-        author: poketeer
+        author: Poketeer
         author_title: 개발자
         location: Korea
-        follow: https://github.com/ppoffice/
+        follow: https://github.com/poketeer
     highlight: monokai
     sidebar: right # sidebar position, options: left, right
     thumbnail: true # enable posts thumbnail, options: true, false
@@ -40,7 +40,7 @@ widgets:
     - archive
     - tag
     - tagcloud
-    - links
+    # - links
 
 # Search
 search:
@@ -50,7 +50,7 @@ search:
 
 # Comment
 comment:
-    disqus: dev-probie # enter disqus shortname here
+    disqus: dev_repo # enter disqus shortname here
     duoshuo: # enter duoshuo shortname here
     youyan: # enter youyan uid here
 
