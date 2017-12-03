@@ -1,5 +1,5 @@
 prose:
-  rooturl: 'source/_posts'
+  rooturl: 'source'
   siteurl: 'https://dev-repo.ga/'
   media: 'media'
   ignore:
@@ -8,7 +8,7 @@ prose:
     - /_layouts
     - /_includes
   metadata:
-    source/_posts:
+    source:
       - name: "title"
         field:
           element: "text"
