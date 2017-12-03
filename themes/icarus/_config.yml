@@ -50,7 +50,7 @@ search:
 
 # Comment
 comment:
-    disqus: dev_repo # enter disqus shortname here
+    disqus: dev-repo # enter disqus shortname here
     duoshuo: # enter duoshuo shortname here
     youyan: # enter youyan uid here
 
