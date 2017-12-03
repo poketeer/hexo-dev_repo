@@ -1,12 +1,12 @@
 ---
+date: '2017-10-30 10:30'
 title: '[Hexo로 포스팅하기 1] Hexo를 설치해 보자'
 tags:
   - hexo
   - blog
 categories:
   - hexo
-  - 설치
-date: 2017-10-30 10:30
+published: true
 ---
 
 <!--![](images/debug.gif)-->
