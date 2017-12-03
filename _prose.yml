@@ -14,6 +14,11 @@ prose:
           element: "text"
           placeholder: "Thumbnail"
           value: ""
+      - name: "banner"
+        field:
+          element: "text"
+          placeholder: "Banner"
+          value: ""
       - name: "title"
         field:
           element: "text"
