@@ -6,7 +6,7 @@ tags:
 categories:
   - hexo
   - 설치
-date: 2017-10-30 10:30
+date: '2017-10-30 10:30 +0900'
 ---
 
 <!--![](images/debug.gif)-->
