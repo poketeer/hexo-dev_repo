@@ -1,8 +1,13 @@
 ---
 date: '2017-12-04 03:16 +0900'
-published: false
-title: Untitled
+title: '[Hexo로 포스팅하기 1] Hexo를 설치해 보자'
+tags:
+  - hexo
+  - blog
+categories:
+  - hexo
 thumbnail: 'http://d.pr/i/1cvRa+'
+published: true
 ---
 
 <!--![](images/debug.gif)-->
