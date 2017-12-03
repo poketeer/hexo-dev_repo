@@ -8,7 +8,7 @@ tags:
 categories:
   - mac
   - 에러
-published: false
+published: true
 ---
 ## 테스트중
 ```java
