@@ -23,6 +23,7 @@ prose:
           element: "multiselect"
           label: "Publish?"
           placeholder: "Publish?"
+          value: "true"
           options:
             - name: "Publish"
               value: "true"
