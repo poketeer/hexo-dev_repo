@@ -24,12 +24,18 @@ prose:
           label: "Tags"
           placeholder: "Tag"
           alterable: "true"
-      - name: "published"
+      - name: "categories"
         field:
           element: "multiselect"
+          label: "Categories"
+          placeholder: "Category"
+          alterable: "true"
+      - name: "published"
+        field:
+          element: "select"
           label: "Publish?"
           placeholder: "Publish?"
-          value: "true"
+          value: "false"
           options:
             - name: "Publish"
               value: "true"
