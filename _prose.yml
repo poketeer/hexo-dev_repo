@@ -9,6 +9,11 @@ prose:
     - /_includes
   metadata:
     source/_posts:
+      - name: "thumbnail"
+        field:
+          element: "text"
+          placeholder: "Thumbnail"
+          value: ""
       - name: "title"
         field:
           element: "text"
