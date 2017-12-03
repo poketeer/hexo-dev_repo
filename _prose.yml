@@ -40,4 +40,4 @@ prose:
       - name: "date"
         field:
           element: "hidden"
-          value: "{}"
+          value: CURRENT_DATETIME
