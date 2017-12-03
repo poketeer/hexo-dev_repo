@@ -18,7 +18,7 @@ customize:
         avatar: css/images/avatar.png
         gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
         author: PPOffice
-        author_title: 견습 개발자
+        author_title: 개발자
         location: Korea
         follow: https://github.com/ppoffice/
     highlight: monokai
