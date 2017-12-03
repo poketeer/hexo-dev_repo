@@ -14,7 +14,7 @@ prose:
           element: "text"
           placeholder: "Title"
           value: ""
-      - name: "published"
+      # - name: "published"
         # field:
         #   element: "select"
         #   label: "Publish?"
