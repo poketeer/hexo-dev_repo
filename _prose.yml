@@ -8,7 +8,7 @@ prose:
     - /_layouts
     - /_includes
   metadata:
-    _posts:
+    source/_posts:
       - name: "title"
         field:
           element: "text"
