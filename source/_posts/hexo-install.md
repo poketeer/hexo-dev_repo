@@ -45,11 +45,11 @@ $ hexo server
 
 ## Github를 통해 Hexo 호스팅하기
 우선 Github에 로그인 한 뒤 새 repository를 생성한다.</br>
-![새 repository 생성 1](http://d.pr/i/1cvRa+ "")
+![새 repository 생성 1](http://d.pr/i/1cvRa+)
 그 후 repository 이름을 입력해야 하는데 (자신의 github 아이디).github.io와 같은 형식으로 해야 한다. 예를 들어, 나의 아이디는 pocketeer이므로 pocketeer.github.io를 입력해 주면 된다. </br>
-![새 repository 생성 2](http://d.pr/i/LmsY+ "")
+![새 repository 생성 2](http://d.pr/i/LmsY+)
 repository 주소를 복사한다.</br>
-![repository 주소 복사](http://d.pr/i/12qZK+ "")
+![repository 주소 복사](http://d.pr/i/12qZK+)
 
 이제 _config.yml에서 deploy에 아까 복사한 repository 주소를 넣으면 된다.
 참고로 자세한 설명은 생략하겠지만 bitbucket의 repository 주소를 넣어도 가능하다.
@@ -91,5 +91,5 @@ $ hexo generate -d  # d는 deploy의 d
 지금까지 Github를 통해 Hexo를 호스팅하는 방법에 대해 알아보았다. Hexo에 대해 계속해서 포스팅할 예정이지만, 정보를 더 얻고 싶으면 [Hexo의 문서](https://hexo.io/docs/)를 보는 것도 추천한다. 다음 글에서는 Hexo로 글쓰는 방법에 대해 알아본다.
 
 ## 참고링크
-* [Hexo](https://hexo.io/)
+* [Hexo Commands](https://hexo.io/)
 * [Hexo documentation](https://hexo.io/docs/)
