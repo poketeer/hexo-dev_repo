@@ -5,7 +5,7 @@ tags:
   - hexo
 categories:
   - hexo
-published: false
+published: true
 ---
 ## 포스팅하기
 
@@ -30,5 +30,3 @@ $ hexo publish [title]
 ## 마치며
 hexo의 다른 명령어들을 알기 위해서는 [Hexo Commands](https://hexo.io/ko/docs/commands.html)를 참고하면 된다.
 다음 포스팅에서는 netlify를 이용해서 무료로 블로그를 만드는 법에 대해서 알아본다.
-
-
