@@ -6,6 +6,8 @@ tags:
 categories:
   - hexo
 published: true
+thumbnail: 'https://cl.ly/102W1F2T0y3J/Image%202017-12-04%20at%203.33.04%20AM.png'
+banner: 'https://cl.ly/102W1F2T0y3J/Image%202017-12-04%20at%203.33.04%20AM.png'
 ---
 ## 포스팅하기
 
