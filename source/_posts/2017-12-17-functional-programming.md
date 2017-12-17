@@ -1,7 +1,7 @@
 ---
 date: '2017-12-17 21:17 +0900'
 published: false
-title: functional_programming
+title: 함수형 프로그래밍이란?
 tags:
   - functional programming
   - java
